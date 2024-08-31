@@ -1,3 +1,5 @@
+#### 1 - Choix des couleurs
+
 Voici une explication détaillée de cette palette de couleurs :
 
 Vert foncé (#2E8B57) : Cette couleur évoque la nature profonde et les forêts. Elle représente la stabilité et l'engagement durable du zoo envers l'environnement.
@@ -12,3 +14,7 @@ Utilisez le vert foncé pour l'en-tête et les éléments importants.
 Le vert moyen peut être utilisé pour les boutons d'action et les liens.
 Le vert clair convient bien aux arrière-plans de sections ou aux éléments secondaires.
 L'ocre et le brun peuvent être utilisés pour mettre en valeur certains éléments ou créer des accents.
+
+#### 2 - Choix des animaux
+
+J'ai choisi 4 animaux par lieu d'habitation (Savane, Jungle, Marais) pour en faire une base de données en forme d'objet TypeScript dans un premier temps.
