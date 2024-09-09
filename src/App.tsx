@@ -1,9 +1,12 @@
-import "./App.css";
+import Layout from "./components/ui/Layout";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <>
-      <h1>Arcadia</h1>
+      <Layout>
+        <Home />
+      </Layout>
     </>
   );
 }
