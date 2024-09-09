@@ -1,6 +1,26 @@
-#### 1 - Choix des couleurs
+# ARCADIA
 
-Voici une explication détaillée de cette palette de couleurs :
+**Installation :**
+
+    pnpm install
+
+**Lancement :**
+
+    pnpm run dev
+
+**Amélioration du README.MD :**
+
+    voir https://www.youtube.com/watch?v=zw_Z0CuYOV8
+
+## **I - Choix des technologies**
+
+- React
+- Typescript
+- CSS : Styled Component
+
+## **II - Choix des couleurs**
+
+**Voici une explication détaillée de cette palette de couleurs :**
 
 Vert foncé (#2E8B57) : Cette couleur évoque la nature profonde et les forêts. Elle représente la stabilité et l'engagement durable du zoo envers l'environnement.
 Vert moyen (#3CB371) : Un vert plus vif qui symbolise la croissance, la vitalité et l'équilibre écologique. Il apporte de la fraîcheur à la palette.
@@ -8,13 +28,37 @@ Vert clair (#8FBC8F) : Cette teinte plus douce évoque la tranquillité et l'har
 Ocre clair (#F4A460) : Cette couleur chaude rappelle la terre et le sable, ajoutant une touche naturelle et organique à la palette.
 Brun (#D2691E) : Cette couleur évoque le bois et la terre, renforçant l'aspect naturel et écologique du thème.
 
-Pour l'utilisation de ces couleurs dans l'application :
+**Pour l'utilisation de ces couleurs dans l'application :**
 
 Utilisez le vert foncé pour l'en-tête et les éléments importants.
 Le vert moyen peut être utilisé pour les boutons d'action et les liens.
 Le vert clair convient bien aux arrière-plans de sections ou aux éléments secondaires.
 L'ocre et le brun peuvent être utilisés pour mettre en valeur certains éléments ou créer des accents.
 
-#### 2 - Choix des animaux
+## **III - Choix des animaux**
 
-J'ai choisi 4 animaux par lieu d'habitation (Savane, Jungle, Marais) pour en faire une base de données en forme d'objet TypeScript dans un premier temps.
+    - Choisir 3 espèces par lieu d'habitation (Savane, Jungle, Marais)
+    - Générer données pour les animaux avec ChatGPT.
+        > En Typescript dans un premier temps.
+        > Puis en SQL plus tard.
+
+## **VI - Création de l'application**
+
+    - Choisir 1 police pour les titres et 1 pour le reste.
+
+### **US1 : Page d'accueil**
+
+**Plan d'action & Questionnement :**
+
+    - Présentation du zoo en y incorporant quelques images.
+        > Générer des images avec DALL.E :
+            > Le Zoo
+            > Les Habitats
+            > Les Animaux
+    - Mentionnez les différents habitats, services ainsi que les animaux que possède le zoo.
+        > S'informer sur les différents habitats et services qu'un zoo peut proposer.
+        > Faire une liste des différents animaux que possède le zoo.
+        > 1 Enclos pour chaque espèce par habitat ou 1 Enclos pour 1 habitat (espèce ensemble) ?
+        > Couple (mâle/femelle) ?
+    - Les avis du Zoo.
+        > Générer des avis par ChatGPT.

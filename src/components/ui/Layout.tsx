@@ -7,12 +7,22 @@ export default function Layout({ children }: PropsWithChildren) {
   return (
     <LayoutStyled>
       <Navbar />
-      {children}
+      <div className="main">{children}</div>
     </LayoutStyled>
   );
 }
 
 const LayoutStyled = styled.div`
-  height: 100vh;
   background: ${theme.colors.greyLight};
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .main {
+    background: url(/images/zoolandia.webp);
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    text-align: center;
+  }
 `;
