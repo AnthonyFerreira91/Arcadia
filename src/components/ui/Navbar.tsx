@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../theme/Theme";
 
 export default function Navbar() {
   return (
@@ -8,4 +9,6 @@ export default function Navbar() {
   );
 }
 
-const NavbarStyled = styled.nav``;
+const NavbarStyled = styled.nav`
+  background: ${theme.colors.greyLight};
+`;

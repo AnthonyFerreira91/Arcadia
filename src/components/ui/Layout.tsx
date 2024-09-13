@@ -1,28 +1,42 @@
-import { PropsWithChildren } from "react";
+import { ReactNode } from "react";
 import styled from "styled-components";
-import { theme } from "../../theme/Theme";
 import Navbar from "./Navbar";
 
-export default function Layout({ children }: PropsWithChildren) {
+type LayoutProps = {
+  variant?: "main" | "section";
+  background?: string;
+  children: ReactNode;
+};
+
+export default function Layout({
+  variant = "main",
+  background,
+  children,
+}: LayoutProps) {
   return (
     <LayoutStyled>
-      <Navbar />
-      <div className="main">{children}</div>
+      {variant === "main" && <Navbar />}
+      <main
+        style={
+          background?.includes("url")
+            ? { backgroundImage: background }
+            : { background: background }
+        }
+      >
+        {children}
+      </main>
     </LayoutStyled>
   );
 }
 
 const LayoutStyled = styled.div`
-  background: ${theme.colors.greyLight};
   height: 100vh;
   display: flex;
   flex-direction: column;
 
-  .main {
-    background: url(/images/zoolandia.webp);
+  main {
+    flex: 1;
     background-size: cover;
     background-position: center;
-    flex: 1;
-    text-align: center;
   }
 `;

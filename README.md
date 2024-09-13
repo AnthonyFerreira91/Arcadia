@@ -62,3 +62,7 @@ L'ocre et le brun peuvent être utilisés pour mettre en valeur certains éléme
         > Couple (mâle/femelle) ?
     - Les avis du Zoo.
         > Générer des avis par ChatGPT.
+
+**Actions :**
+
+    - Création du composant Card et CardsSection qui va servir à présenter les différents habitats et services.
