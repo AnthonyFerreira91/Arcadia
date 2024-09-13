@@ -1,25 +1,25 @@
 import { theme } from "../../theme/Theme";
-import Card from "../reusable/Card";
-import CardsSection from "../reusable/CardsSection";
+import Card from "../reusable/card/Card";
+import CardsSection from "../reusable/card/CardsSection";
 
 export default function Services() {
   return (
     <>
       <CardsSection title="Services" background={theme.colors.secondaire}>
         <Card
-          title="Savane"
+          title="Restaurant"
           imgUrl="/images/Savane.avif"
-          description="La Savane à une température élevée et à une terre très arride..."
+          description="Restaurant 3 étoiles aux spécialités de la savane, la jungle et des marais."
         />
         <Card
-          title="Jungle"
+          title="Visite guidée"
           imgUrl="/images/Jungle.jpg"
-          description="La Jungle est un millieu avec une riche végétation..."
+          description="Visite guidée commenté par une experte."
         />
         <Card
-          title="Marais"
+          title="Baignade avec les aligators"
           imgUrl="/images/Marais.jpg"
-          description="Les Marais alterne entre etendu d'eau et terre arride..."
+          description="Baignade avec des professionnels certifiées (Ne pas provoquer les aligators)."
         />
       </CardsSection>
     </>

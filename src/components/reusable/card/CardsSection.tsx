@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import Layout from "../ui/Layout";
 import { ReactNode } from "react";
-import { theme } from "../../theme/Theme";
+import styled from "styled-components";
+import Layout from "../../ui/Layout";
+import { theme } from "../../../theme/Theme";
 
 type CardsSectionProps = {
   title: string;

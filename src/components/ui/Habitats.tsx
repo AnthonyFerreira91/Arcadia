@@ -1,6 +1,6 @@
 import { theme } from "../../theme/Theme";
-import Card from "../reusable/Card";
-import CardsSection from "../reusable/CardsSection";
+import Card from "../reusable/card/Card";
+import CardsSection from "../reusable/card/CardsSection";
 
 export default function Habitats() {
   return (

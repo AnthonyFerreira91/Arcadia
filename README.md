@@ -65,4 +65,6 @@ L'ocre et le brun peuvent être utilisés pour mettre en valeur certains éléme
 
 **Actions :**
 
-    - Création du composant Card et CardsSection qui va servir à présenter les différents habitats et services.
+    - Création des composants Card et CardsSection pour présenter les différents habitats et services.
+    - Création des composants Habitats et Services
+    - Création des composants CardReview et Reviews pour présenter les avis des visiteurs.

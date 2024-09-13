@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Layout from "../components/ui/Layout";
 import Habitats from "../components/ui/Habitats";
 import Services from "../components/ui/Services";
+import Reviews from "../components/ui/Reviews";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       </Layout>
       <Habitats />
       <Services />
+      <Reviews />
     </HomeStyled>
   );
 }
