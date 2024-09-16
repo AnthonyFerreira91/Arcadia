@@ -1,6 +1,6 @@
-import { theme } from "../../theme/Theme";
-import Card from "../reusable/card/Card";
-import CardsSection from "../reusable/card/CardsSection";
+import { theme } from "../../../theme/Theme";
+import Card from "../../../components/reusable/card/Card";
+import CardsSection from "../../../components/reusable/card/CardsSection";
 
 export default function Services() {
   return (

@@ -1,6 +1,4 @@
-import Home from "./pages/Home";
-
-// TODO: Voir README.MD
+import Home from "./pages/home/Home";
 
 function App() {
   return (

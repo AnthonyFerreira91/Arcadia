@@ -61,7 +61,12 @@ L'ocre et le brun peuvent être utilisés pour mettre en valeur certains éléme
         > 1 Enclos pour chaque espèce par habitat ou 1 Enclos pour 1 habitat (espèce ensemble) ?
         > Couple (mâle/femelle) ?
     - Les avis du Zoo.
-        > Générer des avis par ChatGPT.
+        > Générer des avis par Moi-même.
+    - Autres
+        > Quels nom donner au section Habitats, Services et Review ?
+        > Mettre en place les routes de navigations. (React Router)
+        > Sections cliquable qui dirige vers la page correspondantes.
+        > Appliquer le mobile first. (style)
 
 **Actions :**
 

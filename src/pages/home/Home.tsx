@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import Layout from "../components/ui/Layout";
-import Habitats from "../components/ui/Habitats";
-import Services from "../components/ui/Services";
-import Reviews from "../components/ui/Reviews";
+import Layout from "../../components/ui/Layout";
+import Habitats from "./components/PreviewHabitats";
+import Services from "./components/PreviewServices";
+import Reviews from "./components/Reviews";
 
 export default function Home() {
   return (

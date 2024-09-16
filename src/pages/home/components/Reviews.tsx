@@ -1,5 +1,5 @@
-import CardReview from "../reusable/card/CardReview";
-import CardsSection from "../reusable/card/CardsSection";
+import CardReview from "../../../components/reusable/card/CardReview";
+import CardsSection from "../../../components/reusable/card/CardsSection";
 
 export default function Reviews() {
   return (
