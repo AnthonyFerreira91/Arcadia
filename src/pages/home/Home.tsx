@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import Layout from "../../components/ui/Layout";
-import Habitats from "./components/PreviewHabitats";
-import Services from "./components/PreviewServices";
+import PreviewHabitats from "./components/PreviewHabitats";
+import PreviewServices from "./components/PreviewServices";
 import Reviews from "./components/Reviews";
+import PreviewAnimals from "./components/PreviewAnimals";
 
 export default function Home() {
   return (
@@ -10,8 +11,9 @@ export default function Home() {
       <Layout background="url(/images/zoolandia.webp)">
         <h1></h1>
       </Layout>
-      <Habitats />
-      <Services />
+      <PreviewHabitats />
+      <PreviewAnimals />
+      <PreviewServices />
       <Reviews />
     </HomeStyled>
   );
