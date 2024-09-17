@@ -1,10 +1,10 @@
 import CardReview from "../../../components/reusable/card/CardReview";
-import CardsContener from "../../../components/reusable/card/CardsContener";
+import CardsSection from "../../../components/reusable/card/CardsSection";
 
 export default function Reviews() {
   return (
     <>
-      <CardsContener title="Avis">
+      <CardsSection title="Avis">
         <CardReview
           profile="Dacosta Emilie"
           comment="Le restaurant à été un délice, le service très aimable !"
@@ -45,7 +45,7 @@ export default function Reviews() {
           comment="Les Hypopotames sont très efficace pour faire disparaitre un corp, je recommande !"
           note={5}
         />
-      </CardsContener>
+      </CardsSection>
     </>
   );
 }

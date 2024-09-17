@@ -1,12 +1,12 @@
 import { theme } from "../../../theme/Theme";
 import Card from "../../../components/reusable/card/CardPreview";
-import CardsContener from "../../../components/reusable/card/CardsContener";
+import CardsSection from "../../../components/reusable/card/CardsSection";
 import styled from "styled-components";
 
 export default function Habitats() {
   return (
     <HabitatsStyled>
-      <CardsContener title="Habitats" className={"cardsContener-habitats"}>
+      <CardsSection title="Habitats" className={"cardsSection-habitats"}>
         <Card
           title="Savane"
           imgUrl="/images/Savane.avif"
@@ -22,13 +22,13 @@ export default function Habitats() {
           imgUrl="/images/Marais.jpg"
           description="Les Marais alterne entre etendu d'eau et terre arride..."
         />
-      </CardsContener>
+      </CardsSection>
     </HabitatsStyled>
   );
 }
 
 const HabitatsStyled = styled.div`
-  .cardsContener-habitats {
+  .cardsSection-habitats {
     background: ${theme.colors.primary};
   }
 `;

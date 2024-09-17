@@ -10,5 +10,6 @@ export default function Navbar() {
 }
 
 const NavbarStyled = styled.nav`
-  background: ${theme.colors.greyLight};
+  background: ${theme.colors.primary};
+  color: ${theme.colors.secondaire};
 `;
