@@ -3,44 +3,46 @@ import styled from "styled-components";
 import Layout from "../../ui/Layout";
 import { theme } from "../../../theme/Theme";
 
-type CardsSectionProps = {
+type CardsContenerProps = {
   title: string;
-  background?: string;
+  className?: string;
   children: ReactNode;
 };
 
-export default function CardsSection({
+export default function CardsContener({
   title,
-  background,
+  className,
   children,
-}: CardsSectionProps) {
+}: CardsContenerProps) {
   return (
-    <Layout variant="section" background={background}>
-      <CardsSectionStyled>
-        <div className="section-head">
-          <h1>{title}</h1>
+    <Layout>
+      <CardsContenerStyled className={className}>
+        <div className="cardsContener-head">
+          <h2>{title}</h2>
         </div>
-        <div className="section-cards">{children}</div>
-      </CardsSectionStyled>
+        <div className="cardsContener-body">{children}</div>
+      </CardsContenerStyled>
     </Layout>
   );
 }
 
-const CardsSectionStyled = styled.section`
+const CardsContenerStyled = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
   gap: 5rem;
   padding: 5% 0;
 
-  .section-head {
+  .cardsContener-head {
     text-align: center;
     font-size: 3rem;
     color: ${theme.colors.important};
   }
 
-  .section-cards {
+  .cardsContener-body {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
 `;

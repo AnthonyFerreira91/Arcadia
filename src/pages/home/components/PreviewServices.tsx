@@ -1,11 +1,12 @@
 import { theme } from "../../../theme/Theme";
-import Card from "../../../components/reusable/card/Card";
-import CardsSection from "../../../components/reusable/card/CardsSection";
+import Card from "../../../components/reusable/card/CardPreview";
+import CardsContener from "../../../components/reusable/card/CardsContener";
+import styled from "styled-components";
 
 export default function Services() {
   return (
-    <>
-      <CardsSection title="Services" background={theme.colors.secondaire}>
+    <PreviewServicesStyled>
+      <CardsContener title="Services" className={"cardsContener-services"}>
         <Card
           title="Restaurant"
           imgUrl="/images/Savane.avif"
@@ -21,7 +22,17 @@ export default function Services() {
           imgUrl="/images/Marais.jpg"
           description="Baignade avec des professionnels certifiées (Ne pas provoquer les aligators)."
         />
-      </CardsSection>
-    </>
+      </CardsContener>
+    </PreviewServicesStyled>
   );
 }
+
+const PreviewServicesStyled = styled.div`
+  .cardsContener-services {
+    background: ${theme.colors.secondaire};
+
+    h2 {
+      color: ${theme.colors.primary};
+    }
+  }
+`;

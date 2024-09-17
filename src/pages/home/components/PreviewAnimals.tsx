@@ -3,12 +3,12 @@ import Layout from "../../../components/ui/Layout";
 
 export default function PreviewAnimals() {
   return (
-    <PreviewAnimalsStyled>
-      <Layout variant="section">
+    <Layout>
+      <PreviewAnimalsStyled>
         <h1>PreviewAnimals</h1>
-      </Layout>
-    </PreviewAnimalsStyled>
+      </PreviewAnimalsStyled>
+    </Layout>
   );
 }
 
-const PreviewAnimalsStyled = styled.section``;
+const PreviewAnimalsStyled = styled.div``;

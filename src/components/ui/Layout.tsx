@@ -3,28 +3,15 @@ import styled from "styled-components";
 import Navbar from "./Navbar";
 
 type LayoutProps = {
-  variant?: "main" | "section";
-  background?: string;
+  withNavbar?: boolean;
   children: ReactNode;
 };
 
-export default function Layout({
-  variant = "main",
-  background,
-  children,
-}: LayoutProps) {
+export default function Layout({ withNavbar, children }: LayoutProps) {
   return (
     <LayoutStyled>
-      {variant === "main" && <Navbar />}
-      <main
-        style={
-          background?.includes("url")
-            ? { backgroundImage: background }
-            : { background: background }
-        }
-      >
-        {children}
-      </main>
+      {withNavbar && <Navbar />}
+      <section>{children}</section>
     </LayoutStyled>
   );
 }
@@ -34,9 +21,7 @@ const LayoutStyled = styled.div`
   display: flex;
   flex-direction: column;
 
-  main {
+  > section {
     flex: 1;
-    background-size: cover;
-    background-position: center;
   }
 `;

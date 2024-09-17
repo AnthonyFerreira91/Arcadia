@@ -146,19 +146,6 @@ export const zooAnimals = {
       foodQuantity: 300,
       foodUnit: "g",
       feedingFrequency: "Quotidien",
-    },
-    {
-      name: "Loutre",
-      species: "Loutre",
-      weight: 10,
-      height: 1.2,
-      age: 4,
-      healthStatus: "Très bon",
-      happinessLevel: "Très heureux",
-      diet: "Poisson",
-      foodQuantity: 1000,
-      foodUnit: "g",
-      feedingFrequency: "Quotidien",
-    },
+    }
   ],
 };

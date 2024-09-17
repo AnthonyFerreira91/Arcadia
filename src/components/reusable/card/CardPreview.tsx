@@ -1,42 +1,46 @@
 import styled from "styled-components";
 import { theme } from "../../../theme/Theme";
 
-type CardProps = {
+type CardPreviewProps = {
   title: string;
   description: string;
   imgUrl: string;
 };
 
-export default function Card({ title, description, imgUrl }: CardProps) {
+export default function CardPreview({
+  title,
+  description,
+  imgUrl,
+}: CardPreviewProps) {
   return (
-    <CardStyled>
+    <CardPreviewStyled>
       <div
-        className="card_head"
+        className="cardPreview_head"
         style={{ backgroundImage: `url(${imgUrl})` }}
-      ></div>
-      <div className="card_info">
-        <h2 className="card_info-title">{title}</h2>
-        <div className="card_info-description">{description}</div>
+      />
+      <div className="cardPreview_info">
+        <h3 className="cardPreview_info-title">{title}</h3>
+        <div className="cardPreview_info-description">{description}</div>
       </div>
-    </CardStyled>
+    </CardPreviewStyled>
   );
 }
 
-const CardStyled = styled.div`
+const CardPreviewStyled = styled.div`
   width: 35rem;
   height: 45rem;
   border-radius: 1.5rem;
   overflow: hidden;
   box-shadow: 0 1px 1px ${theme.colors.greyLight};
 
-  .card_head {
+  .cardPreview_head {
     height: 60%;
     background-size: cover;
     background-position: center;
     border-radius: 1.5rem 1.5rem 0 0;
   }
 
-  .card_info {
+  .cardPreview_info {
     height: 40%;
     padding: 2rem;
     background: ${theme.colors.white};
