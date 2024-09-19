@@ -12,6 +12,7 @@ export type AnimalType = {
     foodQuantity: number,
     foodUnit: "g" | "kg",
     feedingFrequency: "Quotidien" | "Bi-hebdomadaire" | "Hebdomadaire",
+    avatar: string;
 }
 
 type SpeciesType =

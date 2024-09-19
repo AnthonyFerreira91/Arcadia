@@ -15,6 +15,7 @@ export const zooAnimals: AnimalType[] = [
       foodQuantity: 5.7,
       foodUnit: "kg",
       feedingFrequency: "Quotidien",
+      avatar: "/images/animaux/lion/Lion-avatar.jpg"
     },
     {
       name: "Nala",
@@ -30,9 +31,10 @@ export const zooAnimals: AnimalType[] = [
       foodQuantity: 4,
       foodUnit: "kg",
       feedingFrequency: "Quotidien",
+      avatar: "/images/animaux/lionne/Lionne-avatar.jpg"
     },
     {
-      name: "Duma",
+      name: "Dumbo",
       species: "Éléphant",
       sex: "Mâle",
       habitat: "Savane",
@@ -45,51 +47,7 @@ export const zooAnimals: AnimalType[] = [
       foodQuantity: 150,
       foodUnit: "kg",
       feedingFrequency: "Quotidien",
-    },
-    {
-      name: "Malaika",
-      species: "Éléphant",
-      sex: "Femelle",
-      habitat: "Savane",
-      weight: 3200,
-      height: 2.8,
-      age: 25,
-      healthStatus: "Excellent",
-      happinessLevel: "Heureux",
-      diet: "Herbe",
-      foodQuantity: 13.5,
-      foodUnit: "kg",
-      feedingFrequency: "Quotidien"
-    },
-    {
-      name: "Dumbo",
-      species: "Éléphant",
-      sex: "Mâle",
-      habitat: "Savane",
-      weight: 1000,
-      height: 1.5,
-      age: 3,
-      healthStatus: "Bon",
-      happinessLevel: "Heureux",
-      diet: "Herbe",
-      foodQuantity: 50,
-      foodUnit: "kg",
-      feedingFrequency: "Quotidien"
-    },
-    {
-      name: "Zuri",
-      species: "Zèbre",
-      sex: "Mâle",
-      habitat: "Savane",
-      weight: 380,
-      height: 1.5,
-      age: 6,
-      healthStatus: "Excellent",
-      happinessLevel: "Content",
-      diet: "Herbe",
-      foodQuantity: 10.5,
-      foodUnit: "kg",
-      feedingFrequency: "Quotidien",
+      avatar: "/images/animaux/elephant/Elephant-avatar.avif"
     },
     {
       name: "Zara",
@@ -104,22 +62,8 @@ export const zooAnimals: AnimalType[] = [
       diet: "Herbe",
       foodQuantity: 9,
       foodUnit: "kg",
-      feedingFrequency: "Quotidien"
-    },
-    {
-      name: "Tamu",
-      species: "Girafe",
-      sex: "Mâle",
-      habitat: "Savane",
-      weight: 1200,
-      height: 5.5,
-      age: 12,
-      healthStatus: "Excellent",
-      happinessLevel: "Heureux",
-      diet: ["Feuilles", "Fruits"],
-      foodQuantity: 36,
-      foodUnit: "kg",
       feedingFrequency: "Quotidien",
+      avatar: "/images/animaux/zebre/Zebre-avatar.webp"
     },
     {
       name: "Tama",
@@ -134,7 +78,8 @@ export const zooAnimals: AnimalType[] = [
       diet: "Feuilles",
       foodQuantity: 30,
       foodUnit: "kg",
-      feedingFrequency: "Quotidien"
+      feedingFrequency: "Quotidien",
+      avatar: "/images/animaux/girafe/Girafe-avatar.png"
     },
     {
       name: "Kong",
@@ -150,6 +95,7 @@ export const zooAnimals: AnimalType[] = [
       foodQuantity: 5.4,
       foodUnit: "kg",
       feedingFrequency: "Quotidien",
+      avatar: "/images/animaux/gorille/Gorille-avatar.jpg"
     },
     {
       name: "Bagheera",
@@ -165,36 +111,7 @@ export const zooAnimals: AnimalType[] = [
       foodQuantity: 2.5,
       foodUnit: "kg",
       feedingFrequency: "Quotidien",
-    },
-    {
-      name: "Shani",
-      species: "Panthère noire",
-      sex: "Femelle",
-      habitat: "Jungle",
-      weight: 60,
-      height: 0.6,
-      age: 6,
-      healthStatus: "Excellent",
-      happinessLevel: "Heureux",
-      diet: "Viande",
-      foodQuantity: 2.1,
-      foodUnit: "kg",
-      feedingFrequency: "Quotidien"
-    },
-    {
-      name: "Rio",
-      species: "Perroquet",
-      sex: "Mâle",
-      habitat: "Jungle",
-      weight: 1,
-      height: 0.9,
-      age: 20,
-      healthStatus: "Bon",
-      happinessLevel: "Heureux",
-      diet: ["Graines", "Fruits"],
-      foodQuantity: 100,
-      foodUnit: "g",
-      feedingFrequency: "Quotidien",
+      avatar: "/images/animaux/panthereNoire/PanthereNoire-avatar.jpg"
     },
     {
       name: "Ana",
@@ -210,6 +127,7 @@ export const zooAnimals: AnimalType[] = [
       foodQuantity: 2.7,
       foodUnit: "kg",
       feedingFrequency: "Hebdomadaire",
+      avatar: "/images/animaux/anaconda/Anaconda-avatar.jpg"
     },
     {
       name: "Croco",
@@ -225,9 +143,10 @@ export const zooAnimals: AnimalType[] = [
       foodQuantity: 13.5,
       foodUnit: "kg",
       feedingFrequency: "Bi-hebdomadaire",
+      avatar: "/images/animaux/crocodile/Crocodile-avatar.jpg"
     },
     {
-      name: "Nénuphar",
+      name: "Hippopotamus",
       species: "Hippopotame",
       sex: "Femelle",
       habitat: "Marais",
@@ -240,6 +159,7 @@ export const zooAnimals: AnimalType[] = [
       foodQuantity: 48,
       foodUnit: "kg",
       feedingFrequency: "Quotidien",
+      avatar: "/images/animaux/hippopotame/Hippopotame-avatar.webp"
     },
     {
       name: "Flamant",
@@ -255,21 +175,7 @@ export const zooAnimals: AnimalType[] = [
       foodQuantity: 350,
       foodUnit: "g",
       feedingFrequency: "Quotidien",
-    },
-    {
-      name: "Rosa",
-      species: "Flamant rose",
-      sex: "Femelle",
-      habitat: "Marais",
-      weight: 3,
-      height: 1.2,
-      age: 4,
-      healthStatus: "Bon",
-      happinessLevel: "Heureux",
-      diet: ["Algues", "Crustacés"],
-      foodQuantity: 300,
-      foodUnit: "g",
-      feedingFrequency: "Quotidien"
+      avatar: "/images/animaux/flamantRose/FlamantRose-avatar.jpg"
     },
     {
       name: "Sherkan",
@@ -284,6 +190,7 @@ export const zooAnimals: AnimalType[] = [
       diet: "Viande",
       foodQuantity: 6,
       foodUnit: "kg",
-      feedingFrequency: "Quotidien"
+      feedingFrequency: "Quotidien",
+      avatar: "/images/animaux/tigre/Tigre-avatar.jpg"
     }
 ];

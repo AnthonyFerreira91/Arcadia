@@ -78,3 +78,6 @@ L'ocre et le brun peuvent être utilisés pour mettre en valeur certains éléme
     A faire :
         - Description, Animaux et Habitats -> voir site de zoo.
         - Puis les intégrer au site.
+
+    Plus tard :
+        - Navbar et Footer

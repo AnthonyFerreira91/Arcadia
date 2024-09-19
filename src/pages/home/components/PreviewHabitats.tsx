@@ -9,17 +9,17 @@ export default function Habitats() {
       <CardsSection title="Habitats" className={"cardsSection-habitats"}>
         <Card
           title="Savane"
-          imgUrl="/images/Savane.avif"
+          imgUrl="/images/habitats/Savane.avif"
           description="La Savane à une température élevée et à une terre très arride..."
         />
         <Card
           title="Jungle"
-          imgUrl="/images/Jungle.jpg"
+          imgUrl="/images/habitats/Jungle.jpg"
           description="La Jungle est un millieu avec une riche végétation..."
         />
         <Card
           title="Marais"
-          imgUrl="/images/Marais.jpg"
+          imgUrl="/images/habitats/Marais.jpg"
           description="Les Marais alterne entre etendu d'eau et terre arride..."
         />
       </CardsSection>

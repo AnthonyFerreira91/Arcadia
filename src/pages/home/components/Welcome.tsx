@@ -11,6 +11,6 @@ export default function Welcome() {
 
 const WelcomeStyled = styled.div`
   height: 100%;
-  background: url(/images/zoolandia.webp);
+  background: url(/images/Welcome-Zoo.jpg);
   background-size: cover;
 `;

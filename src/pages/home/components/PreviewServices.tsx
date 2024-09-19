@@ -9,17 +9,17 @@ export default function Services() {
       <CardsSection title="Services" className={"cardsSection-services"}>
         <Card
           title="Boutique souvenirs"
-          imgUrl="/images/Savane.avif"
+          imgUrl="/images/services/Boutique-souvenir.jpg"
           description="Boutique souvenir"
         />
         <Card
           title="Restaurant"
-          imgUrl="/images/Marais.jpg"
+          imgUrl="/images/services/Restaurant.webp"
           description="Baignade avec des professionnels certifiées (Ne pas provoquer les aligators)."
         />
         <Card
           title="Visite guidée"
-          imgUrl="/images/Jungle.jpg"
+          imgUrl="/images/services/Visite-guidée.webp"
           description="Visite guidée commenté par une experte."
         />
       </CardsSection>

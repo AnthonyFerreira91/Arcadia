@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import LayoutSection from "../../../components/ui/LayoutSection";
 import AvatarAnimal from "../../../components/reusable/AvatarAnimal";
+import { zooAnimals } from "../../../data/Animals";
 import { theme } from "../../../theme/Theme";
 
 export default function PreviewAnimals() {
@@ -9,17 +10,9 @@ export default function PreviewAnimals() {
       <PreviewAnimalsStyled>
         <h2>Animaux</h2>
         <div className="avatar_contener">
-          <AvatarAnimal img="/images/Lion-photo2.jpg" />
-          <AvatarAnimal img="/images/Lionne-photo2.jpg" />
-          <AvatarAnimal img="/images/Zebre-photo1.png" />
-          <AvatarAnimal img="/images/Tigre-photo1.jpg" />
-          <AvatarAnimal img="/images/PanthereNoire-photo1.jpg" />
-          <AvatarAnimal img="/images/Peroquet-photo1.jpg" />
-          <AvatarAnimal img="/images/Hipopotame-photo1.webp" />
-          <AvatarAnimal img="/images/Girafe-photo1.jpg" />
-          <AvatarAnimal img="/images/Crocodile-photo3.jpg" />
-          <AvatarAnimal img="/images/FlamantRose-photo1.jpeg" />
-          <AvatarAnimal img="/images/Anaconda-photo1.jpg" />
+          {zooAnimals.map((animal) => (
+            <AvatarAnimal img={animal.avatar} />
+          ))}
         </div>
       </PreviewAnimalsStyled>
     </LayoutSection>
