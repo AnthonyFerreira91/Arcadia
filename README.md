@@ -51,22 +51,15 @@ L'ocre et le brun peuvent être utilisés pour mettre en valeur certains éléme
 **Plan d'action & Questionnement :**
 
     - Présentation du zoo en y incorporant quelques images.
-        > Générer des images avec DALL.E :
-            > Le Zoo
+        > Visiter des sites de Zoo :
             > Les Habitats
             > Les Animaux
     - Mentionnez les différents habitats, services ainsi que les animaux que possède le zoo.
         > S'informer sur les différents habitats et services qu'un zoo peut proposer.
         > Faire une liste des différents animaux que possède le zoo.
         > 1 Enclos pour chaque espèce par habitat ou 1 Enclos pour 1 habitat (espèce ensemble) ?
-        > Couple (mâle/femelle) ?
     - Les avis du Zoo.
         > Générer des avis par Moi-même.
-    - Autres
-        > Quels nom donner au section Habitats, Services et Review ?
-        > Mettre en place les routes de navigations. (React Router)
-        > Sections cliquable qui dirige vers la page correspondantes.
-        > Appliquer le mobile first. (style)
 
 **Actions :**
 
@@ -74,11 +67,6 @@ L'ocre et le brun peuvent être utilisés pour mettre en valeur certains éléme
     - Création des composants Habitats et Services
     - Création des composants CardReview et Reviews pour présenter les avis des visiteurs.
     - Création des composants PreviewAnimals et Welcome.
-
-    A faire :
-        - Description voir claude ia & site de zoo.
-        - Puis les intégrer au site.
-        - Ajouter nom des Animaux > PreviewAnimals
 
     Plus tard :
         - Navbar et Footer

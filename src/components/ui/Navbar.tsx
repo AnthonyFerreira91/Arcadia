@@ -4,7 +4,7 @@ import { theme } from "../../theme/Theme";
 export default function Navbar() {
   return (
     <NavbarStyled>
-      <h1>Arcadia</h1>
+      <h2>Arcadia</h2>
     </NavbarStyled>
   );
 }
