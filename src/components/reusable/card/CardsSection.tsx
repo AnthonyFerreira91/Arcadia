@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import styled from "styled-components";
-import Layout from "../../ui/Layout";
+import LayoutSection from "../../ui/LayoutSection";
 import { theme } from "../../../theme/Theme";
 
 type CardsSectionProps = {
@@ -15,14 +15,14 @@ export default function CardsSection({
   children,
 }: CardsSectionProps) {
   return (
-    <Layout>
+    <LayoutSection>
       <CardsSectionStyled className={className}>
         <div className="cardsSection-head">
           <h2>{title}</h2>
         </div>
         <div className="cardsSection-body">{children}</div>
       </CardsSectionStyled>
-    </Layout>
+    </LayoutSection>
   );
 }
 

@@ -74,3 +74,7 @@ L'ocre et le brun peuvent être utilisés pour mettre en valeur certains éléme
     - Création des composants Habitats et Services
     - Création des composants CardReview et Reviews pour présenter les avis des visiteurs.
     - Création des composants PreviewAnimals et Welcome.
+
+    A faire :
+        - Description, Animaux et Habitats -> voir site de zoo.
+        - Puis les intégrer au site.

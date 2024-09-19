@@ -11,13 +11,13 @@ export default function Reviews() {
           note={5}
         />
         <CardReview
-          profile="Vamsy Robert"
-          comment="Génial, mais la baignade avec les aligators à été annulé car une femme c'est fait bouffé."
-          note={3}
-        />
-        <CardReview
           profile="Albin Jerôme"
           comment="Parfait ! Les animaux sont heureux et ça ce voit."
+          note={5}
+        />
+        <CardReview
+          profile="Marie D."
+          comment="Une expérience inoubliable ! Les animaux semblent heureux et bien soignés. L'engagement écologique du zoo est vraiment impressionnant."
           note={5}
         />
         <CardReview
@@ -28,12 +28,12 @@ export default function Reviews() {
         <CardReview
           profile="Dacosta Emilie"
           comment="J'ai envoyé un steak à une giraffe, il en a pas voulu."
-          note={2}
+          note={3}
         />
         <CardReview
           profile="Vamsy Robert"
           comment="Mon fils à voulu jouer avec les lions, depuis il lui manque un bras."
-          note={1}
+          note={0}
         />
         <CardReview
           profile="Albin Jerôme"

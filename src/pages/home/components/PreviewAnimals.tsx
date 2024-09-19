@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Layout from "../../../components/ui/Layout";
+import Layout from "../../../components/ui/LayoutSection";
 
 export default function PreviewAnimals() {
   return (

@@ -8,19 +8,19 @@ export default function Services() {
     <PreviewServicesStyled>
       <CardsSection title="Services" className={"cardsSection-services"}>
         <Card
-          title="Restaurant"
+          title="Boutique souvenirs"
           imgUrl="/images/Savane.avif"
-          description="Restaurant 3 étoiles aux spécialités de la savane, la jungle et des marais."
+          description="Boutique souvenir"
+        />
+        <Card
+          title="Restaurant"
+          imgUrl="/images/Marais.jpg"
+          description="Baignade avec des professionnels certifiées (Ne pas provoquer les aligators)."
         />
         <Card
           title="Visite guidée"
           imgUrl="/images/Jungle.jpg"
           description="Visite guidée commenté par une experte."
-        />
-        <Card
-          title="Baignade avec les aligators"
-          imgUrl="/images/Marais.jpg"
-          description="Baignade avec des professionnels certifiées (Ne pas provoquer les aligators)."
         />
       </CardsSection>
     </PreviewServicesStyled>
