@@ -1,4 +1,3 @@
-import { CgProfile } from "react-icons/cg";
 import { RxStarFilled } from "react-icons/rx";
 import styled from "styled-components";
 
@@ -16,7 +15,6 @@ export default function CardReview({
   return (
     <CardReviewStyled>
       <div className="review_profile">
-        <CgProfile size="4.5rem" />
         {profile}
         <div className="review_profile_note">
           {note}
@@ -32,8 +30,8 @@ const CardReviewStyled = styled.div`
   border: 1px solid black;
   border-radius: 0.5rem;
   width: 32rem;
-  height: 17rem;
-  padding: 2rem;
+  height: 15rem;
+  padding: 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;

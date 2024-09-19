@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import Layout from "../../../components/ui/LayoutSection";
+import LayoutSection from "../../../components/ui/LayoutSection";
 
 export default function Welcome() {
   return (
-    <Layout withNavbar>
+    <LayoutSection>
       <WelcomeStyled></WelcomeStyled>
-    </Layout>
+    </LayoutSection>
   );
 }
 
