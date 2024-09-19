@@ -76,8 +76,9 @@ L'ocre et le brun peuvent être utilisés pour mettre en valeur certains éléme
     - Création des composants PreviewAnimals et Welcome.
 
     A faire :
-        - Description, Animaux et Habitats -> voir site de zoo.
+        - Description voir claude ia & site de zoo.
         - Puis les intégrer au site.
+        - Ajouter nom des Animaux > PreviewAnimals
 
     Plus tard :
         - Navbar et Footer

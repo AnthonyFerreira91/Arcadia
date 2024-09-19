@@ -11,7 +11,10 @@ export default function PreviewAnimals() {
         <h2>Animaux</h2>
         <div className="avatar_contener">
           {zooAnimals.map((animal) => (
-            <AvatarAnimal img={animal.avatar} />
+            <div className="avatar_contener-profile">
+              <AvatarAnimal img={animal.avatar} />
+              <h4>{animal.name}</h4>
+            </div>
           ))}
         </div>
       </PreviewAnimalsStyled>
@@ -35,11 +38,21 @@ const PreviewAnimalsStyled = styled.div`
 
   .avatar_contener {
     background: ${theme.colors.primary};
-    width: 70%;
+    width: 75%;
     padding: 5rem;
     border-radius: 3rem;
     display: flex;
+    justify-content: space-around;
     gap: 5rem;
     flex-wrap: wrap;
+
+    &-profile {
+      text-align: center;
+      color: ${theme.colors.important};
+
+      > h4 {
+        margin-top: 0.5rem;
+      }
+    }
   }
 `;
