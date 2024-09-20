@@ -14,4 +14,8 @@ export default function Header() {
 const HeaderStyled = styled.header`
   background: ${theme.colors.primary};
   color: ${theme.colors.secondaire};
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
 `;
