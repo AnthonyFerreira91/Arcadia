@@ -68,5 +68,13 @@ L'ocre et le brun peuvent être utilisés pour mettre en valeur certains éléme
     - Création des composants CardReview et Reviews pour présenter les avis des visiteurs.
     - Création des composants PreviewAnimals et Welcome.
 
-    Plus tard :
-        - Navbar et Footer
+### **US2 : Menu**
+
+**Plan d'action & Questionnement :**
+
+    - Navbar :
+        - Accès à tous les services.
+        - Accès à tous les habitats.
+        - Connexion (la connexion sera possible uniquement pour les vétérinaires, employé et administrateur).
+        - Contact
+        - Retour Accueil
