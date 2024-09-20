@@ -32,16 +32,14 @@ const WelcomeStyled = styled.div`
   background: url(/images/Welcome-Zoo.jpg);
   background-size: cover;
   color: ${theme.colors.important};
-  /* align-content: center; */
   padding: 5rem;
 
   > div {
     width: 50%;
-    padding: 5rem;
+    padding: 2rem;
 
     > p {
       font-weight: 700;
-      font-size: 2rem;
     }
   }
 `;

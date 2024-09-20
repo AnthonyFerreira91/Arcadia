@@ -7,7 +7,7 @@ export default function Reviews() {
       <CardsSection title="Avis">
         <CardReview
           profile="Dacosta Emilie"
-          comment="Le restaurant à été un délice, le service très aimable !"
+          comment="Le restaurant à été un délice, le service très aimable et l'engagement écologique du zoo est vraiment impressionnant."
           note={5}
         />
         <CardReview
@@ -17,7 +17,7 @@ export default function Reviews() {
         />
         <CardReview
           profile="Marie D."
-          comment="Une expérience inoubliable ! Les animaux semblent heureux et bien soignés. L'engagement écologique du zoo est vraiment impressionnant."
+          comment="Une expérience inoubliable ! Les animaux semblent heureux et bien soignés."
           note={5}
         />
         <CardReview

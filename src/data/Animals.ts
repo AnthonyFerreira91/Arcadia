@@ -146,7 +146,7 @@ export const zooAnimals: AnimalType[] = [
       avatar: "/images/animaux/crocodile/Crocodile-avatar.jpg"
     },
     {
-      name: "Hippopotamus",
+      name: "Hippotamus",
       species: "Hippopotame",
       sex: "Femelle",
       habitat: "Marais",

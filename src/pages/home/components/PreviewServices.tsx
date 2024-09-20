@@ -3,7 +3,7 @@ import Card from "../../../components/reusable/card/CardPreview";
 import CardsSection from "../../../components/reusable/card/CardsSection";
 import styled from "styled-components";
 
-export default function Services() {
+export default function PreviewServices() {
   return (
     <PreviewServicesStyled>
       <CardsSection title="Services" className={"cardsSection-services"}>
