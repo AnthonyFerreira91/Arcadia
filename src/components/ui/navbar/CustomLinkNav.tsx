@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import styled from "styled-components";
-import { theme } from "../../theme/Theme";
+import { theme } from "../../../theme/Theme";
 
 type CustomLinkProps = {
   to: "/" | "/home" | "/services" | "/habitats" | "/contact";

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import LayoutSection from "../../../components/ui/LayoutSection";
+import LayoutSection from "../../../components/ui/layout/LayoutSection";
 import AvatarAnimal from "../../../components/reusable/AvatarAnimal";
 import { zooAnimals } from "../../../data/Animals";
 import { theme } from "../../../theme/Theme";

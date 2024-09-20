@@ -4,7 +4,7 @@ import Services from "./pages/services/Services";
 import Habitats from "./pages/habitats/Habitats";
 import Contact from "./pages/contact/Contact";
 import ErrorPage from "./pages/error/ErrorPage";
-import LayoutPage from "./components/ui/LayoutPage";
+import LayoutPage from "./components/ui/layout/LayoutPage";
 
 function App() {
   return (

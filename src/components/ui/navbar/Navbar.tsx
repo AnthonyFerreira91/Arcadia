@@ -1,23 +1,24 @@
 import styled from "styled-components";
-import CustomLink from "./CustomLink";
+import CustomLinkNav from "./CustomLinkNav";
 
 export default function Navbar() {
   return (
     <NavbarStyled>
       <ul className="nav_ul">
-        <CustomLink to="/">
+        <CustomLinkNav to="/">
           <h3>Accueil</h3>
-        </CustomLink>
-        <CustomLink to="/services">
+        </CustomLinkNav>
+        <CustomLinkNav to="/services">
           <h3>Services</h3>
-        </CustomLink>
-        <CustomLink to="/habitats">
+        </CustomLinkNav>
+        <CustomLinkNav to="/habitats">
           <h3>Habitats</h3>
-        </CustomLink>
-        <CustomLink to="/contact">
+        </CustomLinkNav>
+        <CustomLinkNav to="/contact">
           <h3>Contact</h3>
-        </CustomLink>
+        </CustomLinkNav>
       </ul>
+      <button>Connexion</button>
     </NavbarStyled>
   );
 }
