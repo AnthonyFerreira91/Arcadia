@@ -11,7 +11,7 @@ export default function PreviewAnimals() {
         <h2>Animaux</h2>
         <div className="avatar_contener">
           {zooAnimals.map((animal) => (
-            <div className="avatar_contener-profile">
+            <div className="avatar_contener-profile" key={animal.name}>
               <AvatarAnimal img={animal.avatar} />
               <h4>{animal.name}</h4>
             </div>

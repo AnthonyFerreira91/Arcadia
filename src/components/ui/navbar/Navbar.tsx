@@ -1,8 +1,13 @@
 import styled from "styled-components";
 import CustomLinkNav from "./CustomLinkNav";
 import Button from "../../reusable/Button";
+import Modal from "../../reusable/Modal";
+import Login from "../login/Login";
+import { useModal } from "../../../hooks/useModal";
 
 export default function Navbar() {
+  const { isOpen, switchOpen } = useModal();
+
   return (
     <NavbarStyled>
       <ul className="nav_ul">
@@ -19,9 +24,12 @@ export default function Navbar() {
           <h4>Contact</h4>
         </CustomLinkNav>
       </ul>
-      <Button>
+      <Button onClick={switchOpen}>
         <h5>Connexion</h5>
       </Button>
+      <Modal isOpen={isOpen} handleSwitch={switchOpen}>
+        <Login />
+      </Modal>
     </NavbarStyled>
   );
 }

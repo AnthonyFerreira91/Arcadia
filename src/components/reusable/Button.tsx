@@ -1,9 +1,14 @@
-import { ReactNode } from "react";
+import { MouseEventHandler, ReactNode } from "react";
 import styled from "styled-components";
 import { theme } from "../../theme/Theme";
 
-export default function Button({ children }: { children: ReactNode }) {
-  return <ButtonStyled>{children}</ButtonStyled>;
+type ButtonProps = {
+  onClick: MouseEventHandler;
+  children: ReactNode;
+};
+
+export default function Button({ onClick, children }: ButtonProps) {
+  return <ButtonStyled onClick={onClick}>{children}</ButtonStyled>;
 }
 
 const ButtonStyled = styled.button`
