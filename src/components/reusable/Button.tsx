@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { theme } from "../../theme/Theme";
 
 type ButtonProps = {
-  onClick: MouseEventHandler;
+  onClick?: MouseEventHandler;
   children: ReactNode;
 };
 

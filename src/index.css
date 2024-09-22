@@ -7,15 +7,15 @@
 
 html {
   font-size: 62.5%;
-  
-  &:has(dialog[open]) {
-    overflow: hidden;
-  }
 }
 
 body {
   font-size: 1.6rem;
-}
+  
+  &:has(.scroll-off) {
+    overflow: hidden;
+  }
+} 
 
 h1 {
   font-size: 5rem;
