@@ -5,10 +5,21 @@ import Login from "../login/Login";
 import { useConnection } from "../../../hooks/useConnection";
 import Button from "../../reusable/Button";
 import { useUserProfile } from "../../../hooks/useUserProfile";
+import { useToasts } from "../../../hooks/useToasts";
 
 export default function Navbar() {
   const { connected, setConnected } = useConnection();
   const { userProfile } = useUserProfile();
+  const { pushToast } = useToasts();
+
+  const handleDisconnect = () => {
+    setConnected(false);
+    pushToast({
+      content: "Déconnecté",
+      duration: 1,
+      type: "danger",
+    });
+  };
 
   return (
     <NavbarStyled>
@@ -32,7 +43,7 @@ export default function Navbar() {
         </ButtonModal>
       )}
       {connected && (
-        <Button onClick={() => setConnected(false)}>
+        <Button onClick={handleDisconnect}>
           {(userProfile && `Espace ${userProfile?.role}`) || "connected"}
         </Button>
       )}

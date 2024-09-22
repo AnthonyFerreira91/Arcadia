@@ -5,6 +5,7 @@ import { theme } from "../../../theme/Theme";
 import { useConnection } from "../../../hooks/useConnection";
 import { useUserProfile } from "../../../hooks/useUserProfile";
 import auth from "../../../api/auth/auth";
+import { useToasts } from "../../../hooks/useToasts";
 
 export default function LoginForm({
   toggleModal,
@@ -14,6 +15,7 @@ export default function LoginForm({
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const { setConnected } = useConnection();
   const { setUserProfile } = useUserProfile();
+  const { pushToast } = useToasts();
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -33,6 +35,11 @@ export default function LoginForm({
         });
         setConnected(true);
         toggleModal();
+        pushToast({
+          content: "Connecté",
+          duration: 1,
+          type: "success",
+        });
       }
     } catch (error) {
       setErrorMsg("Une erreur est survenue. Veuillez réessayer.");
