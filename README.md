@@ -8,6 +8,14 @@
 
     pnpm run dev
 
+**Git Hub :**
+
+    https://github.com/AnthonyFerreira91/Arcadia
+
+**Trello :**
+
+    https://trello.com/b/76qSI4Ml/projet-ecf-studi
+
 ## **I - Choix des technologies**
 
 Front : React, Typescript, CSS & Styled Component
