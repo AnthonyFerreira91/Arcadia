@@ -1,5 +1,6 @@
-import { createContext, Dispatch, ReactNode, useState } from "react";
+import { createContext, Dispatch, ReactNode, useEffect, useState } from "react";
 import { TypeUser } from "../types/dataTypes";
+import { useConnection } from "../hooks/useConnection";
 
 type UserProfileContextType = {
   userProfile: TypeUser | null;
@@ -14,6 +15,13 @@ export const UserProfileProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
   const [userProfile, setUserProfile] = useState<TypeUser | null>(null);
+  const { connected } = useConnection();
+
+  useEffect(() => {
+    if (userProfile != null && connected === false) {
+      setUserProfile(null);
+    }
+  }, [userProfile, connected]);
 
   return (
     <UserProfileContext.Provider value={{ userProfile, setUserProfile }}>

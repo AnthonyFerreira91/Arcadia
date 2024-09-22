@@ -8,17 +8,17 @@ type CustomLinkProps = {
   children: ReactNode;
 };
 
-export default function CustomLink({ to, children }: CustomLinkProps) {
+export default function CustomNavLink({ to, children }: CustomLinkProps) {
   const resolvedPath = useResolvedPath(to);
   const isActive = useMatch({ path: resolvedPath.pathname });
   return (
-    <CustomLinkStyled className={isActive ? "active" : ""}>
+    <CustomNavLinkStyled className={isActive ? "active" : ""}>
       <Link to={to}>{children}</Link>
-    </CustomLinkStyled>
+    </CustomNavLinkStyled>
   );
 }
 
-const CustomLinkStyled = styled.li`
+const CustomNavLinkStyled = styled.li`
   > a {
     text-decoration: none;
     color: ${theme.colors.white};

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import CustomLinkNav from "./CustomLinkNav";
+import CustomNavLink from "./CustomNavLink";
 import ButtonModal from "../../reusable/ButtonModal";
 import Login from "../login/Login";
 import { useConnection } from "../../../hooks/useConnection";
@@ -7,24 +7,24 @@ import Button from "../../reusable/Button";
 import { useUserProfile } from "../../../hooks/useUserProfile";
 
 export default function Navbar() {
-  const { connected } = useConnection();
+  const { connected, setConnected } = useConnection();
   const { userProfile } = useUserProfile();
 
   return (
     <NavbarStyled>
       <ul className="nav_ul">
-        <CustomLinkNav to="/">
+        <CustomNavLink to="/">
           <h4>Accueil</h4>
-        </CustomLinkNav>
-        <CustomLinkNav to="/services">
+        </CustomNavLink>
+        <CustomNavLink to="/services">
           <h4>Services</h4>
-        </CustomLinkNav>
-        <CustomLinkNav to="/habitats">
+        </CustomNavLink>
+        <CustomNavLink to="/habitats">
           <h4>Habitats</h4>
-        </CustomLinkNav>
-        <CustomLinkNav to="/contact">
+        </CustomNavLink>
+        <CustomNavLink to="/contact">
           <h4>Contact</h4>
-        </CustomLinkNav>
+        </CustomNavLink>
       </ul>
       {!connected && (
         <ButtonModal ContentComponentModal={Login}>
@@ -32,7 +32,7 @@ export default function Navbar() {
         </ButtonModal>
       )}
       {connected && (
-        <Button>
+        <Button onClick={() => setConnected(false)}>
           {(userProfile && `Espace ${userProfile?.role}`) || "connected"}
         </Button>
       )}
