@@ -3,9 +3,9 @@ import Card from "../../../components/reusable/card/CardPreview";
 import CardsSection from "../../../components/reusable/card/CardsSection";
 import styled from "styled-components";
 
-export default function Habitats() {
+export default function PreviewHabitats() {
   return (
-    <HabitatsStyled>
+    <PreviewHabitatsStyled>
       <CardsSection title="Habitats" className={"cardsSection-habitats"}>
         <Card
           title="Savane"
@@ -23,12 +23,12 @@ export default function Habitats() {
           description="Les Marais alterne entre etendu d'eau et terre arride..."
         />
       </CardsSection>
-    </HabitatsStyled>
+    </PreviewHabitatsStyled>
   );
 }
 
-const HabitatsStyled = styled.div`
+const PreviewHabitatsStyled = styled.div`
   .cardsSection-habitats {
-    background: ${theme.colors.primary};
+    background: ${theme.colors.background_primary};
   }
 `;

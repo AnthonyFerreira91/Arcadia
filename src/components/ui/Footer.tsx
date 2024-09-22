@@ -11,7 +11,7 @@ export default function Footer() {
 }
 
 const FooterStyled = styled.footer`
-  background: ${theme.colors.primary};
+  background: ${theme.colors.background_primary};
   color: white;
   text-align: center;
   align-content: center;

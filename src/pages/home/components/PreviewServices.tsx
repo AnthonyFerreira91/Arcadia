@@ -3,7 +3,7 @@ import Card from "../../../components/reusable/card/CardPreview";
 import CardsSection from "../../../components/reusable/card/CardsSection";
 import styled from "styled-components";
 
-export default function Services() {
+export default function PreviewServices() {
   return (
     <PreviewServicesStyled>
       <CardsSection title="Services" className={"cardsSection-services"}>
@@ -29,6 +29,6 @@ export default function Services() {
 
 const PreviewServicesStyled = styled.div`
   .cardsSection-services {
-    background: ${theme.colors.primary};
+    background: ${theme.colors.background_primary};
   }
 `;

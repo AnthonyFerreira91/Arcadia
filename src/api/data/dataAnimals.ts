@@ -1,6 +1,6 @@
-import { AnimalType } from "../types/animalType";
+import { TypeAnimal } from "../../types/dataTypes";
 
-export const zooAnimals: AnimalType[] = [
+export const dataAnimals: TypeAnimal[] = [
     {
       name: "Simba",
       species: "Lion",
@@ -146,7 +146,7 @@ export const zooAnimals: AnimalType[] = [
       avatar: "/images/animaux/crocodile/Crocodile-avatar.jpg"
     },
     {
-      name: "Hippopotamus",
+      name: "Hippotamus",
       species: "Hippopotame",
       sex: "Femelle",
       habitat: "Marais",

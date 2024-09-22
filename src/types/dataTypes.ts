@@ -1,6 +1,13 @@
-export type AnimalType = {
+export type TypeUser = {
+    email: string;
+    password: string;
+    role: "Employer" | "Vétérinaire" | "Administrateur";
     name: string;
-    species: SpeciesType,
+}
+
+export type TypeAnimal = {
+    name: string;
+    species: TypeSpecies,
     sex: "Mâle" | "Femelle",
     habitat: "Savane" | "Jungle" | "Marais",
     weight: number,
@@ -8,14 +15,14 @@ export type AnimalType = {
     age: number,
     healthStatus: "Mauvais" | "Moyen" | "Bon" | "Excellent",
     happinessLevel: "Malheureux" | "Triste" | "Content" | "Heureux",
-    diet: DietType | DietType[],
+    diet: TypeDiet | TypeDiet[],
     foodQuantity: number,
     foodUnit: "g" | "kg",
     feedingFrequency: "Quotidien" | "Bi-hebdomadaire" | "Hebdomadaire",
     avatar: string;
 }
 
-type SpeciesType =
+type TypeSpecies =
     | "Lion"
     | "Éléphant"
     | "Zèbre"
@@ -31,7 +38,7 @@ type SpeciesType =
     | "Autre"
 ;
 
-type DietType =
+type TypeDiet =
     | "Viande" 
     | "Herbe" 
     | "Fruits" 

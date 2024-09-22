@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import styled from "styled-components";
-import LayoutSection from "../../ui/LayoutSection";
+import LayoutSection from "../../ui/layout/LayoutSection";
 import { theme } from "../../../theme/Theme";
 
 type CardsSectionProps = {
