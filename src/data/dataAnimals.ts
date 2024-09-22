@@ -1,6 +1,6 @@
-import { AnimalType } from "../types/animalType";
+import { TypeAnimal } from "../types/dataTypes";
 
-export const zooAnimals: AnimalType[] = [
+export const dataAnimals: TypeAnimal[] = [
     {
       name: "Simba",
       species: "Lion",

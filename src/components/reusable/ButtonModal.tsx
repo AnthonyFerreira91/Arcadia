@@ -3,13 +3,17 @@ import Button from "./Button";
 import { createPortal } from "react-dom";
 import Modal from "./Modal";
 
-type ButtonModalProps<T> = {
+type BaseContentProps = {
+  toggleModal: () => void;
+};
+
+type ButtonModalProps<T extends BaseContentProps> = {
   ContentComponentModal: ComponentType<T>;
-  contentProps?: T;
+  contentProps?: Omit<T, "toggleModal">;
   children: ReactNode;
 };
 
-export default function ButtonModal<T>({
+export default function ButtonModal<T extends BaseContentProps>({
   ContentComponentModal,
   contentProps,
   children,
@@ -43,8 +47,8 @@ export default function ButtonModal<T>({
         createPortal(
           <Modal toggleModal={toggleModal}>
             <ContentComponentModal
-              toggleModal={toggleModal}
               {...(contentProps as T)}
+              toggleModal={toggleModal}
             />
           </Modal>,
           document.body

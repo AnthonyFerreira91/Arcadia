@@ -2,17 +2,44 @@ import { FormEvent } from "react";
 import styled from "styled-components";
 import Button from "../../reusable/Button";
 import { theme } from "../../../theme/Theme";
+import { useConnection } from "../../../hooks/useConnection";
+import { dataUsers } from "../../../data/dataUsers";
+import { useUserProfile } from "../../../hooks/useUserProfile";
 
 export default function LoginForm({
   toggleModal,
 }: {
   toggleModal: () => void;
 }) {
-  const handleSubmit = (e: FormEvent) => {
+  const { setConnected } = useConnection();
+  const { setUserProfile } = useUserProfile();
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const data = new FormData(e.target as HTMLFormElement);
-    console.log(data);
-    toggleModal();
+    const data = new FormData(e.currentTarget);
+    const email = (data.get("email") as string).toLowerCase();
+    const pwd = data.get("password") as string;
+
+    const userFind = dataUsers.find(
+      (el) => el.email === email && el.password === pwd
+    );
+
+    if (userFind) {
+      setUserProfile({
+        email: userFind.email,
+        password: userFind.password,
+        name: userFind.name,
+        role: userFind.role,
+      });
+      setConnected(true);
+      toggleModal();
+    } else {
+      if (dataUsers.find((el) => el.email === email)) {
+        alert("Mot de passe incorrect !");
+      } else {
+        alert("Email incorrect !");
+      }
+    }
   };
 
   return (

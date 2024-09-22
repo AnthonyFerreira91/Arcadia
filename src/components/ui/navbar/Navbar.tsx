@@ -2,8 +2,14 @@ import styled from "styled-components";
 import CustomLinkNav from "./CustomLinkNav";
 import ButtonModal from "../../reusable/ButtonModal";
 import Login from "../login/Login";
+import { useConnection } from "../../../hooks/useConnection";
+import Button from "../../reusable/Button";
+import { useUserProfile } from "../../../hooks/useUserProfile";
 
 export default function Navbar() {
+  const { connected } = useConnection();
+  const { userProfile } = useUserProfile();
+
   return (
     <NavbarStyled>
       <ul className="nav_ul">
@@ -20,9 +26,16 @@ export default function Navbar() {
           <h4>Contact</h4>
         </CustomLinkNav>
       </ul>
-      <ButtonModal ContentComponentModal={Login}>
-        <h5>Connexion</h5>
-      </ButtonModal>
+      {!connected && (
+        <ButtonModal ContentComponentModal={Login}>
+          <h5>Connexion</h5>
+        </ButtonModal>
+      )}
+      {connected && (
+        <Button onClick={() => console.log(userProfile?.role)}>
+          {userProfile?.role || "connected"}
+        </Button>
+      )}
     </NavbarStyled>
   );
 }
