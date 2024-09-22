@@ -87,7 +87,7 @@ const LoginFormStyled = styled.form`
   }
 
   .errorMsg {
-    color: red;
+    color: ${theme.colors.red};
     margin: 8px 0;
   }
 `;

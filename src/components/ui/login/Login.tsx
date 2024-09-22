@@ -16,7 +16,7 @@ export default function Login({ toggleModal }: { toggleModal: () => void }) {
 }
 
 const LoginStyled = styled.div`
-  background: ${theme.colors.primary};
+  background: ${theme.colors.background_primary};
   color: ${theme.colors.white};
   padding: 2rem;
   display: flex;

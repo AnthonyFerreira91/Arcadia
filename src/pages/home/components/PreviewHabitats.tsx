@@ -29,6 +29,6 @@ export default function PreviewHabitats() {
 
 const PreviewHabitatsStyled = styled.div`
   .cardsSection-habitats {
-    background: ${theme.colors.primary};
+    background: ${theme.colors.background_primary};
   }
 `;

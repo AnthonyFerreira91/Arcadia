@@ -23,7 +23,7 @@ export default function PreviewAnimals() {
 }
 
 const PreviewAnimalsStyled = styled.div`
-  background: ${theme.colors.background};
+  background: ${theme.colors.background_secondary};
   height: 100%;
   padding: 5%;
   display: flex;
@@ -37,7 +37,7 @@ const PreviewAnimalsStyled = styled.div`
   }
 
   .avatar_contener {
-    background: ${theme.colors.primary};
+    background: ${theme.colors.background_primary};
     width: 75%;
     padding: 5rem;
     border-radius: 3rem;

@@ -29,6 +29,6 @@ export default function PreviewServices() {
 
 const PreviewServicesStyled = styled.div`
   .cardsSection-services {
-    background: ${theme.colors.primary};
+    background: ${theme.colors.background_primary};
   }
 `;

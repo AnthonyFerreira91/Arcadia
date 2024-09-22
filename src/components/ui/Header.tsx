@@ -12,7 +12,7 @@ export default function Header() {
 }
 
 const HeaderStyled = styled.header`
-  background: ${theme.colors.primary};
+  background: ${theme.colors.background_primary};
   color: ${theme.colors.secondaire};
   display: flex;
   justify-content: space-between;
