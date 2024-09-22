@@ -1,4 +1,4 @@
-import { TypeUser } from "../types/dataTypes";
+import { TypeUser } from "../../types/dataTypes";
 
 export const dataUsers: TypeUser[] = [
     {

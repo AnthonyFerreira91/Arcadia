@@ -1,4 +1,4 @@
-import { TypeAnimal } from "../types/dataTypes";
+import { TypeAnimal } from "../../types/dataTypes";
 
 export const dataAnimals: TypeAnimal[] = [
     {

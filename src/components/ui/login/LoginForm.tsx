@@ -1,44 +1,42 @@
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
 import styled from "styled-components";
 import Button from "../../reusable/Button";
 import { theme } from "../../../theme/Theme";
 import { useConnection } from "../../../hooks/useConnection";
-import { dataUsers } from "../../../data/dataUsers";
 import { useUserProfile } from "../../../hooks/useUserProfile";
+import auth from "../../../api/auth/auth";
 
 export default function LoginForm({
   toggleModal,
 }: {
   toggleModal: () => void;
 }) {
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const { setConnected } = useConnection();
   const { setUserProfile } = useUserProfile();
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const data = new FormData(e.currentTarget);
-    const email = (data.get("email") as string).toLowerCase();
-    const pwd = data.get("password") as string;
+    const dataLogin = new FormData(e.currentTarget);
 
-    const userFind = dataUsers.find(
-      (el) => el.email === email && el.password === pwd
-    );
+    try {
+      const getUser = await auth(dataLogin);
 
-    if (userFind) {
-      setUserProfile({
-        email: userFind.email,
-        password: userFind.password,
-        name: userFind.name,
-        role: userFind.role,
-      });
-      setConnected(true);
-      toggleModal();
-    } else {
-      if (dataUsers.find((el) => el.email === email)) {
-        alert("Mot de passe incorrect !");
+      if (getUser instanceof Error) {
+        setErrorMsg(getUser.message);
       } else {
-        alert("Email incorrect !");
+        setUserProfile({
+          email: getUser.email,
+          password: getUser.password,
+          name: getUser.name,
+          role: getUser.role,
+        });
+        setConnected(true);
+        toggleModal();
       }
+    } catch (error) {
+      setErrorMsg("Une erreur est survenue. Veuillez réessayer.");
+      console.error(error);
     }
   };
 
@@ -63,6 +61,7 @@ export default function LoginForm({
           required
         />
       </div>
+      {errorMsg && <p className="errorMsg">{errorMsg}</p>}
       <Button>Connexion</Button>
     </LoginFormStyled>
   );
@@ -82,7 +81,13 @@ const LoginFormStyled = styled.form`
     border-radius: 1.5rem;
     outline: none;
   }
+
   input::placeholder {
     text-align: center;
+  }
+
+  .errorMsg {
+    color: red;
+    margin: 8px 0;
   }
 `;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import LayoutSection from "../../../components/ui/layout/LayoutSection";
 import AvatarAnimal from "../../../components/reusable/AvatarAnimal";
-import { dataAnimals } from "../../../data/dataAnimals";
+import { dataAnimals } from "../../../api/data/dataAnimals";
 import { theme } from "../../../theme/Theme";
 
 export default function PreviewAnimals() {

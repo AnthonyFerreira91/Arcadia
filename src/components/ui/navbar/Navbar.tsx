@@ -32,8 +32,8 @@ export default function Navbar() {
         </ButtonModal>
       )}
       {connected && (
-        <Button onClick={() => console.log(userProfile?.role)}>
-          {userProfile?.role || "connected"}
+        <Button>
+          {(userProfile && `Espace ${userProfile?.role}`) || "connected"}
         </Button>
       )}
     </NavbarStyled>
