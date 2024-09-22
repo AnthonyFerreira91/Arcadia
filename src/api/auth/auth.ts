@@ -14,9 +14,9 @@ export default function auth(dataLogin: FormData) {
     } else {
         let errorMsg;
         if (dataUsers.find((el) => el.email === email)) {
-          errorMsg = "Mot de passe incorrect !";
+          errorMsg = "Le mot de passe est incorrect.";
         } else {
-          errorMsg = "Email incorrect !";
+          errorMsg = "L'utilisateur n'existe pas.";
         }
         return new Error(errorMsg)
     }

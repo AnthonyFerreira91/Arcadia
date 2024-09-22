@@ -6,7 +6,7 @@ const colors = {
   important: "#D2691E",
   white: "#fff",
   dark: "#17161a",
-  greyLight: "#e4e5e9",
+  red: "red",
   greyMedium: "#a7a8ad",
   greySemiDark: "#93a2b1",
   greyDark: "#6f737e",
